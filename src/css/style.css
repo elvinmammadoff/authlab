@@ -245,7 +245,7 @@ a {
   padding-bottom: 3rem;
   padding-left: 5rem;
   padding-right: 5rem;
-  width: 50%;
+  min-width: 50%;
   margin: 0 auto;
   background: linear-gradient(#1b183f,rgba(27,24,63,.8)) padding-box, linear-gradient(180deg,#cb17e9,rgba(192,30,213,0)) border-box;
   border: 4px solid transparent;
