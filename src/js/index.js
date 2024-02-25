@@ -1,4 +1,24 @@
-var myCarousel = document.querySelector('#carouselExampleIndicators')
-var carousel = new bootstrap.Carousel(myCarousel, {
-  interval: 3000
-})
+/* Theme Name: AuthLab
+  Author: Alissio
+  Version: 1.0.0
+  File Description: Main JS file of the template
+*/
+
+
+// Show password input value
+
+document.getElementById('password-addon').addEventListener('click', function () {
+	let passwordInput = document.getElementById("exampleInputPassword");
+	if (passwordInput.type == "password") {
+		passwordInput.type = "text";
+	} else {
+		passwordInput.type = "password";
+	}
+});
+
+// two-step move next
+function moveToNext(elem, count) {
+    if (elem.value.length > 0) {
+        document.getElementById("digit" + count + "-input").focus();
+    }
+}

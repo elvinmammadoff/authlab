@@ -3,91 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Authlab - Responsive Metaverse Authentication Bootstrap v5 Template</title>
 
   <link rel="stylesheet" href="./src/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./src/css/materialdesignicons.css">
   <link rel="stylesheet" href="./src/css/style.css">
-
+  
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300,400,500,600,700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="min-vh-100">
-    <div class="container p-10 h-screen">
-      <div class="row h-full overflow-clip">
-        <div class="col-lg-6 text-white p-0 relative">
-          <img src="./src/img/cover.jpg" alt="" class="w-full h-full object-cover">
-          <div class="bg-overlay"></div>
-          <div class="auth-carousel">
-            <h3 class="text-center">New Account</h3>
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="text-center text-white px-16">
-                    <p class="text-white opacity-80 text-lg mt-3 min-h-24">Join today to unlock a world of endless possibilities of the Social Metaverse.</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="text-center text-white px-16">
-                    <p class="text-white opacity-80 text-lg mt-3 min-h-24">No matter what experience you have. We will help you start get AuthLab coins in minutes.</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="text-center text-white px-16">
-                    <p class="text-white opacity-80 text-lg mt-3 min-h-24">Get access to 442,527 secure land spots in a top city you can't find anywhere else.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 bg-white px-20 py-4 d-flex flex-column">
+    <div class="bg-overlay"></div>
+    <div class="container d-flex align-items-center px-5 h-screen z-1 relative">
+      <div class="shadow bg-indigo-950 d-flex flex-column form-layout">
 
-          <div class="d-flex align-items-center justify-content-center gap-x-1 mb-4">
+        <div class="d-flex justify-content-center mb-4">
+          <a href="./index.html" class="d-flex align-items-center gap-x-1">
             <img src="./src/img/logo.svg" alt="" class="w-8">
-            <h1 class="text-uppercase text-zinc-700 font-bold text-2xl mb-0">Authlab</h1>
+            <h1 class="text-uppercase text-white font-bold text-2xl mb-0">Authlab</h1>
+          </a>
+        </div>
+
+        <form class="d-flex flex-column flex-1 justify-content-center">          
+          <h2 class="text-xl text-white text-center mb-3">New Account</h2>
+
+          <div class="mb-3">
+            <label for="exampleInputEmail" class="form-label text-white">Email</label>
+            <input type="email" class="form-control border-0" id="exampleInputEmail" aria-describedby="emailHelp">
           </div>
 
-          <form class="d-flex flex-column flex-1 justify-content-center">
+          <div class="mb-3">
+            <label for="exampleInputUsername" class="form-label text-white">Username</label>
+            <input type="email" class="form-control border-0" id="exampleInputUsername" aria-describedby="emailHelp">
+          </div>
 
-            <div class="mb-3">
-              <label for="exampleInputEmail" class="form-label">Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp">
+          <div class="mb-3">
+            <label for="exampleInputPassword" class="form-label text-white">Password</label>
+            <div class="relative">
+              <input type="password" class="form-control pr-11 border-0" id="exampleInputPassword">
+              <button type="button" class="btn btn-link position-absolute h-100 end-0 top-0" id="password-addon">
+                <i class="mdi mdi-eye-outline f-16 text-white"></i>
+              </button>
             </div>
+          </div>
 
-            <div class="mb-3">
-              <label for="exampleInputUsername" class="form-label">Username</label>
-              <input type="email" class="form-control" id="exampleInputUsername" aria-describedby="emailHelp">
-            </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck">
+            <label class="form-check-label text-white" for="exampleCheck">I agree to all the </label>
+            <a href="#" target="_blank" class="text-sm no-underline text-cyan-400 hover:text-cyan-500">term and condition</a>
+          </div>
 
-            <div class="mb-3">
-              <label for="exampleInputPassword" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword">
-            </div>
+          <div class="text-center mt-3">
+            <button type="button" class="btn btn-primary w-full">Register</button>
+          </div>
 
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck">
-              <label class="form-check-label" for="exampleCheck">I agree to all the </label>
-              <a href="#" target="_blank" class="text-sm no-underline text-cyan-600 hover:text-cyan-800">term and condition</a>
+          <div class="d-flex align-items-center justify-content-center gap-x-4 mt-4">
+            <div class="d-flex align-items-center gap-x-4">
+              <p class="text-sm mb-0 text-white">Already have an account?</p>
+              <a href="index.html" class="text-sm no-underline text-cyan-400 hover:text-cyan-500">
+                Sign in
+              </a>
             </div>
-
-            <div class="text-center mt-3">
-              <button type="button" class="btn btn-primary w-full">Register</button>
-            </div>
-
-            <div class="d-flex align-items-center justify-content-center gap-x-4 mt-4">
-              <div class="d-flex align-items-center gap-x-4">
-                <p class="text-sm mb-0">Already have an account?</p>
-                <a href="index.html" class="text-sm no-underline text-cyan-600 font-bold hover:text-cyan-800">
-                  Sign in
-                </a>
-              </div>
-            </div>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
 <script src="./src/js/bootstrap.bundle.min.js"></script>
+<script src="./src/js/index.js"></script>
 </body>
 </html>
